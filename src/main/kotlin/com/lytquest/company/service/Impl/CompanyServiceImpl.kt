@@ -12,8 +12,9 @@ class CompanyServiceImpl : CompanyService {
     @Autowired
     lateinit var companyRepository: CompanyRepository
 
-    override fun createCompany(company: Company) {
-        companyRepository.save(company)
+    override fun createCompany(company: Company): String {
+         companyRepository.save(company)
+         return "Data Saved"
     }
 
     override fun getAllCompany(): List<Company> {
