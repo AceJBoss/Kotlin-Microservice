@@ -10,7 +10,7 @@ import javax.persistence.Table
 data class Company(
     @Id
     @GeneratedValue
-    var id: Int = 0,
+    val id: Int = 0,
     var name: String = "",
     var address: String = ""
     )
